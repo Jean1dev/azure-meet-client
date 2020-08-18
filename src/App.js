@@ -19,14 +19,13 @@ function App() {
           Coloque seu <code>Nome</code> e vamos la.
         </p>
         <input type="text" onChange={e => setNick(e.target.value)}></input>
-        <a
+        <button
           onClick={() => setMeet(true)}
           className="App-link"
-          href="#"
           rel="noopener noreferrer"
         >
           Bora
-        </a>
+        </button>
       </header>
     </div>
   );
