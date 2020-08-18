@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-function VideoConf() {
+function VideoConf({ nick }) {
+    console.log(nick)
     const jistsiContainerId = 'jitsi-container-id'
     const [loading, setLoading] = useState(false)
     const containerStyle = {
@@ -33,9 +34,9 @@ function VideoConf() {
         api.addEventListener('videoConferenceJoined', () => {
             console.log('um usuario entro')
             setLoading(false)
-            api.executeCommand('displayName', 'Jean')
+            api.executeCommand('displayName', nick)
         })
-    }, [])
+    }, [nick])
 
     useEffect(() => {
         if (window.JitsiMeetExternalAPI) {

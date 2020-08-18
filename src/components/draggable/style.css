@@ -1,14 +1,14 @@
-#div-arrastavel {
+#mydiv {
     position: absolute;
     z-index: 9;
     background-color: antiquewhite;
     border: 1px solid #d3d3;
-}
-
-#div-header {
+  }
+  
+  #mydivheader {
     padding: 10px;
     cursor: move;
     z-index: 10;
     background-color: brown;
     color: white;
-}
+  }

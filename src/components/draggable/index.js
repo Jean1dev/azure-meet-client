@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import './style.css'
-// import VideoConf from '../video-conf';
+import React from 'react';
+import './style.css';
+import VideoConf from '../video-conf'
 
-function DraggablePannel() {
-
-    useEffect(() => {
+function DraggableConf({ nick }) {
+    
+    React.useEffect(() => {
         const script = document.createElement('script')
         script.type = 'text/javascript'
         script.async = true
@@ -14,19 +14,16 @@ function DraggablePannel() {
 
     return (
         <>
-            <h1>Draggable DIV Element</h1>
+            <h1>Olá {nick}</h1>
 
             <p>Click and hold the mouse button down while moving the DIV element</p>
 
             <div id="mydiv">
                 <div id="mydivheader">Click here to move</div>
-                <p>Move</p>
-                <p>this</p>
-                <p>DIV</p>
+                <VideoConf nick={nick} />
             </div>
-
         </>
     )
 }
 
-export default DraggablePannel;
+export default DraggableConf;
