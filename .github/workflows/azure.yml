@@ -37,8 +37,6 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ env.NODE_VERSION }}
-    - name: Showing archives
-      run: cd azure-meet-client
     - name: npm install, build, and test
       run: |
         # Build and test the project, then
@@ -51,4 +49,4 @@ jobs:
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/azure-meet-client
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
