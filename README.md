@@ -1,6 +1,7 @@
 ## 📺 Latest YouTube Videos
 <!-- YOUTUBE:START -->
 - [🔥Criando o Meet com ReactJS e Azure Functions🔥](https://youtu.be/bi8lPrWvhvU)
+- [🔥Deploy do front no Azure Web Apps🔥](https://youtu.be/UX92mdT048o)
 
 <!-- YOUTUBE:END -->
 
